@@ -1,12 +1,3 @@
-
-var w = floaty.rawWindow(
-    <frame gravity="center" bg="#66CCFF">
-        <text id="text">作者:依铭心 唯一Q:934361344 </text>
-    </frame>
-);
-
-w.setSize(600, 50);
-alert("作者:依铭心  QQ:934361344  认准QQ群:1163608969  ");
 sleep(100);var window = floaty.window('<frame><vertical><button id="btn" text="暂停"/><horizontal><button id="speedLow" text="减速" w="80"/><button id="speedHigh" text="加速"w="80"/></horizontal><horizontal><button id="speed" text="x1" w="80"/><button id="stop" text="停止"w="80"/></horizontal></vertical></frame>');window.exitOnClose();
 window.btn.click(()=>{if (window.btn.getText() != '暂停') {s = 1;window.btn.setText('暂停')} else {s = 0;window.btn.setText('继续')}})
 window.speedHigh.click(()=>{speedControl=(speedControl*10+1)/10;window.speed.setText("x"+speedControl)})
