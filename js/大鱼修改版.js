@@ -3,7 +3,7 @@ window.btn.click(()=>{if (window.btn.getText() != '暂停') {s = 1;window.btn.se
 window.speedHigh.click(()=>{speedControl=(speedControl*10+1)/10;window.speed.setText("x"+speedControl)})
 window.speedLow.click(()=>{if(speedControl<=0.1){return};speedControl=(speedControl*10-1)/10;window.speed.setText("x"+speedControl)})
 window.speed.click(()=>{speedControl=1;window.speed.setText("x"+speedControl)})
-window.stop.click(()=>{engines.stopAllAndToast()})
+window.stop.click(()=>{engines.myEngine().forceStop()})
 var s=1;var speedControl=1;var zuobiaoPath="/sdcard/脚本/zuobiao21.txt";
 if (files.exists(zuobiaoPath)) {
     eval(files.read(zuobiaoPath));//快速适配分辨率
